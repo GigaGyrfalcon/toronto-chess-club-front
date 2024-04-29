@@ -1,0 +1,16 @@
+$fonts:
+    'praxis' '../f/praxis-regular' 400 normal,
+    'praxis' '../f/praxis-bold' 600 normal,
+    'grasond' '../f/grasond-regular' 400 normal;
+	
+
+@each $font in $fonts {
+    @font-face {
+        font-family: nth($font, 1);
+        src: url(nth($font, 2) + '.woff2') format("woff2"),
+             url(nth($font, 2) + '.woff') format("woff");
+        font-weight: nth($font, 3);
+        font-style: nth($font, 4);
+        font-display: swap;
+    }
+}

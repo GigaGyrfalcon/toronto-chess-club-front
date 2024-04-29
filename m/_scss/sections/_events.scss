@@ -1,0 +1,59 @@
+.card-event {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem 1.6rem 2.5rem;
+    background-color: var(--clr-light-cream);
+    gap: 2.5rem;
+    transition: all .3s ease;
+    &:hover, &:focus-within {
+        background-color: var(--clr-cream);
+    }
+    &__media img {
+        width: 100%;
+        aspect-ratio: 1.39;
+        object-fit: cover;
+    }
+    &__info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        padding-inline: 1.5rem;
+    }
+
+    &__info > * {
+        color: var(--clr-black);
+    }
+    
+    &__date {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        font-weight: 600;
+        margin: 0;
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        font-weight: 600;
+        margin: 0;
+        @media (min-width: 768px) {
+            font-size: 2.4rem;
+            line-height: 4rem;
+        }
+    }
+
+    &__time {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-block: auto 0;
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+}

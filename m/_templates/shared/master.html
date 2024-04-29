@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="<$ lang $>">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="m/i/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="m/i/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="m/i/favicons/favicon-16x16.png">
+    <link rel="manifest" href="m/i/favicons/site.webmanifest">
+    <link rel="mask-icon" href="m/i/favicons/safari-pinned-tab.svg" color="#a6895d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title><$ pageTitle $></title>
+
+    <link rel="stylesheet" href="m/css/site.min.css?<$ build_version $>" />
+    <script type="text/javascript" src="m/js/pre.min.js?<$ build_version $>"></script>
+</head>
+<body class="<$ pageCssClass $>">
+    <% include "./components/header.html" %>
+    <main class="main">
+	<% block content %>
+	<% endblock %>
+    </main>
+    <% include "./components/footer.html" %>
+	<script type="text/javascript" src="m/js/post.min.js?<$ build_version $>"></script>
+</body>
+</html>

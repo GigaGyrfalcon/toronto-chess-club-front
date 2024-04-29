@@ -1,0 +1,94 @@
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.5rem;
+    .header & {
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+    .footer & {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 3.5rem;
+        }
+    }
+    .footer-bottom & {
+        gap: 1.2rem;
+    }
+    &__link {
+        display: block;
+        position: relative;
+        &:not(:last-child) {
+            .footer-main & {
+                &::after {
+                    content: '';
+                    display: none;
+                    position: absolute;
+                    right: -1.75rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 2.8rem;
+                    background-color: var(--clr-gold);
+                    @media (min-width: 768px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__link-text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        transition: all .3s ease;
+        .header & {
+            color: var(--clr-light-gray);
+        }
+        .responsive-menu & {
+            color: var(--clr-light-gray);
+        }
+        .footer-main & {
+            color: var(--clr-gold);
+        }
+        .footer-bottom & {
+            color: var(--clr-dark-green);
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+
+    &__link:hover &__link-text, &__link:focus &__link-text {
+        .header & {
+            color: var(--clr-gold);
+        }
+        .responsive-menu & {
+            color: var(--clr-gold);
+        }
+        .footer-main & {
+            color: var(--clr-light-gray);
+        }
+        .footer-bottom & {
+            color: var(--clr-gold);
+        }
+    }
+    
+    &__link.active &__link-text {
+        .header & {
+            color: var(--clr-gold);
+        }
+        .responsive-menu & {
+            color: var(--clr-gold);
+        }
+        .footer-main & {
+            color: var(--clr-light-gray);
+        }
+        .footer-bottom & {
+            color: var(--clr-gold);
+        }
+    }
+}

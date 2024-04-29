@@ -1,0 +1,89 @@
+.swiper {
+    &__button {
+        width: 3.4rem;
+        height: 3.6rem;
+        border: 1px solid var(--clr-gold);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease;
+        &:hover, &:focus {
+            background-color: var(--clr-gold);
+        }
+        @media (min-width: 768px) {
+            width: 6.5rem;
+            height: 6.7rem;
+        }
+        .hero & {
+            position: absolute;
+            z-index: 19;
+            bottom: 1rem;
+            @media (min-width: 1200px) {
+                bottom: initial;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .testimonials & {
+            position: absolute;
+            top: 0;
+            z-index: 19;
+        }
+        &--prev {
+            .hero & {
+                left: 50%;
+                margin-left: -4rem;
+                @media (min-width: 768px) {
+                    margin-left: -8rem;
+                }
+                @media (min-width: 1200px) {
+                    left: 2.4rem;
+                    margin-inline-start: initial;
+                }
+            }
+            .testimonials & {
+                right: 4.5rem;
+                @media (min-width: 768px) {
+                    right: 9.5rem;
+                }
+            }
+        }
+        &--next {
+            .hero & {
+                right: 50%;
+                margin-right: -4rem;
+                @media (min-width: 768px) {
+                    margin-right: -8rem;
+                }
+                @media (min-width: 1200px) {
+                    right: 2.4rem;
+                    margin-inline-end: initial;
+                }
+            }
+            .testimonials & {
+                right: 0;
+            }
+        }
+    }
+    &__button-icon {
+        width: 1rem;
+        height: 2.3rem;
+        fill: none;
+        stroke-width: 2px;
+        stroke: var(--clr-gold);
+        transition: all .3s ease;
+        @media (min-width: 768px) {
+            width: 1.4rem;
+            height: 3.2rem;
+        }
+    }
+    &__button--prev &__button-icon {
+        rotate: 185deg;
+    }
+    &__button--next &__button-icon {
+        rotate: 5deg;
+    }
+    &__button:hover &__button-icon, &__button:focus &__button-icon {
+        stroke: var(--clr-light-gray);
+    }
+}

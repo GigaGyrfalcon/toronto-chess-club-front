@@ -1,0 +1,58 @@
+.card-about {
+    --_info-bg: var(--clr-dark-blue);
+    display: flex;
+    flex-direction: column;
+    &__media img {
+        width: 100%;
+        aspect-ratio: 1.34;
+        object-fit: cover;
+    }
+    &__info {
+        padding-block: 3rem 3.5rem;
+        padding-inline: 3rem 3.5rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        border: 2px solid var(--clr-gold);
+        outline: 2px solid var(--clr-gold);
+        outline-offset: -1rem;
+        background-color: var(--_info-bg);
+        .card-about--darkgreen & {
+            --_info-bg: var(--clr-dark-green);
+        }
+        .card-about--burgundy & {
+            --_info-bg: var(--clr-burgundy);
+        }
+    }
+    &__label {
+        font-size: 2.4rem;
+        line-height: normal;
+        color: var(--clr-gold);
+        font-family: var(--font-caps);
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__title {
+        font-size: 2.4rem;
+        line-height: 1.1;
+        color: var(--clr-gold);
+        font-weight: 600;
+        margin: 0;
+    }
+    &__description {
+        font-size: 1.6rem;
+        line-height: normal;
+        color: var(--clr-gold);
+        margin: 0;
+        &:not(:only-child) {
+            margin-block-start: 2rem;
+        }
+    }
+    &__actions {
+        margin-block-start: auto;
+    }
+    &__actions .button {
+        width: calc(100% - 1.5rem);
+    }
+}

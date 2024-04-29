@@ -1,0 +1,46 @@
+:root {
+
+	--clr-gold: rgb(166, 138, 93);
+	--clr-gold-rgb: 166, 138, 93;
+	--clr-light-gold: rgb(185, 149, 91);
+	--clr-light-gold-rgb: 185, 149, 91;
+	--clr-dark-green: rgb(0, 61, 48);
+	--clr-dark-green-rgb: 0, 61, 48;
+	--clr-cream: rgb(255, 243, 233);
+	--clr-cream-rgb: 255, 243, 233;
+	--clr-orange: rgb(255, 128, 12);
+	--clr-orange-rgb: 255, 128, 12;
+	--clr-burgundy: rgb(66, 9, 9);
+	--clr-burgundy-rgb: 66, 9, 9;
+	--clr-light-cream: rgb(252, 246, 227);
+	--clr-light-cream-rgb: 252, 246, 227;
+	--clr-pale-yellow: rgb(254, 218, 75);
+	--clr-pale-yellow-rgb: 254, 218, 75;
+	--clr-dark-blue: rgb(16, 40, 63);
+	--clr-dark-blue-rgb: 16, 40, 63;
+	--clr-ivory: rgb(255, 240, 240);
+	--clr-ivory-rgb: 255, 240, 240;
+	--clr-light-pink: rgb(255, 185, 185);
+	--clr-light-pink-rgb: 255, 185, 185;
+	--clr-dark-maroon: rgb(42, 2, 36);
+	--clr-dark-maroon-rgb: 42, 2, 36;
+	--clr-pale-ivory: rgb(249, 249, 225);
+	--clr-pale-ivory-rgb: 249, 249, 225;
+	--clr-olive: rgb(177, 181, 13);
+	--clr-olive-rgb: 177, 181, 13;
+	--clr-light-gray: rgb(249, 247, 246);
+	--clr-light-gray-rgb: 249, 247, 246;
+	--clr-white: rgb(255, 255, 255);
+	--clr-white-rgb: 255, 255, 255;
+	--clr-black: rgb(0, 0, 0);
+	--clr-black-rgb: 0, 0, 0;
+
+	--font-regular: 'praxis', sans-serif;
+	--font-caps: 'grasond', sans-serif;
+}
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1145px) !default;

@@ -1,0 +1,46 @@
+@import "abstracts/variables";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./node_modules/bootstrap/scss/variables";
+
+//ABSTRACTS
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+//BASE
+@import "base/base";
+@import "base/animations";
+@import "base/fonts";
+@import "base/typography";
+@import "base/utilities";
+
+//COMPONENTS
+
+@import "components/buttons";
+@import "components/logo";
+@import "components/navigation";
+@import "components/burger";
+@import "components/responsive-menu";
+@import "components/social";
+@import "components/swiper";
+@import "components/tabs";
+
+//LAYOUT
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/section";
+
+//SECTIONS
+@import "sections/hero";
+@import "sections/about";
+@import "sections/join";
+@import "sections/events";
+@import "sections/news";
+@import "sections/leaderboard";
+@import "sections/testimonials";
+
+//PAGES
+@import "pages/home";
+
+@import "essentials";

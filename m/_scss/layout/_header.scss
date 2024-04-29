@@ -1,0 +1,28 @@
+.header {
+    width: 100%;
+    background-color: var(--clr-dark-green);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-block: .6rem;
+    }
+
+    &__content > *:first-child {
+        margin-inline-end: auto;
+    }
+
+    .navigation:not(:last-child) {
+        margin-inline-end: 8rem;
+    }
+
+    .user-actions {
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+
+}

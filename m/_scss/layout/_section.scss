@@ -1,0 +1,127 @@
+.section {
+    --_section-description-clr: var(--clr-black);
+    padding-block: 4rem 6rem;
+    isolation: isolate;
+    position: relative;
+    @media (min-width: 768px) {
+        padding-block: 6rem 10rem;
+    }
+    &--cream {
+        background-color: var(--clr-cream);
+    }
+    &--darkblue {
+        background-color: var(--clr-dark-blue);
+    }
+    &--ivory {
+        background-color: var(--clr-ivory);
+    }
+    &--burgundy {
+        background-color: var(--clr-burgundy);
+    }
+    &--darkgreen {
+        background-color: var(--clr-dark-green);
+    }
+    &--noise-effect {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            //TODO: Check if this is the right value
+            background-image: url('../i/otis-redding.png');
+            background-repeat: repeat;
+            z-index: -2;
+            // TODO: Check if this is the right value
+            opacity: .7;
+        }
+    }
+    &__head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        line-height: normal;
+        font-family: var(--font-caps);
+        color: var(--clr-gold);
+        margin: 0;
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+            font-size: 7rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        line-height: normal;
+        color: var(--_section-description-clr);
+        margin: 0;
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
+        }
+        @media (min-width: 1200px) {
+            max-width: 51.5rem;
+        }
+        .section--burgundy & {
+            --_section-description-clr: var(--clr-light-gray);
+        }
+    }
+
+    &__head + &__body {
+        margin-block-start: 4.5rem;
+        @media (min-width: 768px) {
+            margin-block-start: 7.5rem;
+        }
+    }
+
+    &__actions {
+        margin-block-start: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 768px) {
+            margin-block-start: 8rem;
+        }
+    }
+}
+
+.section-pattern {
+    position: absolute;
+    z-index: -1;
+    @media (max-width: 1199px) {
+        display: none;
+    }
+    &--chess-figure-top {
+        width: 10.4rem;
+        top: 10rem;
+        right: 15vw;
+    }
+    &--chess-figure-bottom {
+        width: 10.2rem;
+        bottom: 3rem;
+        left: 20vw;
+    }
+    &--img-right-bottom {
+        right: 0;
+        bottom: -23rem;
+        width: 40rem;
+    }
+    &--img-right-top {
+        top: -2.2rem;
+        right: 0;
+        width: 40rem;
+    }
+    &--img-left-bottom {
+        bottom: 0;
+        left: 0;
+        width: 26.5rem;
+    }
+}

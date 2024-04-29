@@ -1,0 +1,22 @@
+.logo {
+    .footer & {
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__link {
+        display: block;
+    }
+    &__media {
+        .header & {
+            width: 11.6rem;
+        }
+        .footer & {
+            width: 16.7rem;
+            @media (max-width: 767px) {
+                width: 11.6rem;
+            }
+        }
+    }
+}

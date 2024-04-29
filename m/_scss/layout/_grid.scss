@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 100%;
+    &--2items {
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &--3items {
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
