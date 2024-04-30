@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "gulp webserver",
+    "start": "gulp",
+    "run": "gulp webserver",
     "build": "gulp --prod"
   },
   "author": "",
