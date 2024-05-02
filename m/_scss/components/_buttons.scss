@@ -1,167 +1,173 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    transition: all .3s ease;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
 
-    &--primary {
-        font-family: var(--font-caps);
-        text-transform: uppercase;
-    }
+  &--primary {
+    font-family: var(--font-caps);
+    text-transform: uppercase;
+  }
 
-    &--secondary, &--link {
-        font-family: var(--font-regular);
-        font-weight: 600;
-        font-size: 1.6rem;
-    }
+  &--secondary,
+  &--link {
+    font-family: var(--font-regular);
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
 
-    &--link {
-        padding-inline: 0;
-        line-height: 2.4rem;
-        font-weight: 600;
-    }
+  &--link {
+    padding-inline: 0;
+    line-height: 2.4rem;
+    font-weight: 600;
+  }
 
-    &--gold {
-        background-color: var(--clr-gold);
-        color: var(--clr-light-gray);
-        &:hover, &:focus {
-            background-color: var(--clr-light-gold);
-        }
+  &--gold {
+    background-color: var(--clr-gold);
+    color: var(--clr-light-gray);
+    &:not(:area-disabled):hover,
+    &:not(:area-disabled):focus {
+      background-color: var(--clr-light-gold);
     }
+  }
 
-    &--cream {
-        background-color: var(--clr-cream);
-        color: var(--clr-gold);
-        &:hover, &:focus {
-            background-color: var(--clr-gold);
-            color: var(--clr-cream);
-        }
+  &--cream {
+    background-color: var(--clr-cream);
+    color: var(--clr-gold);
+    &:not(:area-disabled):hover,
+    &:not(:area-disabled):focus {
+      background-color: var(--clr-gold);
+      color: var(--clr-cream);
     }
+  }
 
-    &--light-cream {
-        background-color: var(--clr-light-cream);
-        color: var(--clr-gold);
-        &:hover, &:focus {
-            background-color: var(--clr-cream);
-        }
+  &--light-cream {
+    background-color: var(--clr-light-cream);
+    color: var(--clr-gold);
+    &:not(:area-disabled):hover,
+    &:not(:area-disabled):focus {
+      background-color: var(--clr-cream);
     }
-    
-    &--dark-green {
-        background-color: var(--clr-dark-green);
-        color: var(--clr-gold);
-    }
+  }
 
-    &--ivory {
-        background-color: var(--clr-ivory);
-        color: var(--clr-gold);
-        &:hover, &:focus {
-            background-color: var(--clr-gold);
-            color: var(--clr-ivory);
-        }
-    }
+  &--dark-green {
+    background-color: var(--clr-dark-green);
+    color: var(--clr-gold);
+  }
 
-    &--gold-gradient {
-        background: linear-gradient(90deg, var(--clr-gold), var(--clr-light-gold));
-        color: var(--clr-light-gray);
-        &:hover, &:focus {
-            background: linear-gradient(90deg, var(--clr-gold), var(--clr-gold));
-        }
+  &--ivory {
+    background-color: var(--clr-ivory);
+    color: var(--clr-gold);
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
+      background-color: var(--clr-gold);
+      color: var(--clr-ivory);
     }
+  }
 
-    &--link-white {
-        color: var(--clr-white);
-        &:hover, &:focus {
-            color: var(--clr-gold);
-        }
+  &--gold-gradient {
+    background: linear-gradient(90deg, var(--clr-gold), var(--clr-light-gold));
+    color: var(--clr-light-gray);
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
+      background: linear-gradient(90deg, var(--clr-gold), var(--clr-gold));
     }
+  }
 
-    &--length-long {
-        padding-inline: 5rem;
+  &--link-white {
+    color: var(--clr-white);
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
+      color: var(--clr-gold);
     }
+  }
 
-    &--length-medium {
-        padding-inline: 3.8rem;
-    }
+  &--length-long {
+    padding-inline: 5rem;
+  }
 
-    &--length-short {
-        padding-inline: 3rem;
-    }
+  &--length-medium {
+    padding-inline: 3.8rem;
+  }
 
-    &--height-tall {
-        line-height: 6rem;
-        border-radius: 3rem;
-        @media (min-width: 768px) {
-            line-height: 8.6rem;
-            border-radius: 4.3rem;
-        }
-    }
+  &--length-short {
+    padding-inline: 3rem;
+  }
 
-    &--height-medium {
-        line-height: 4.2rem;
-        border-radius: 2.1rem;
-        @media (min-width: 768px) {
-            line-height: 6.2rem;
-            border-radius: 3.1rem;
-        }
+  &--height-tall {
+    line-height: 6rem;
+    border-radius: 3rem;
+    @media (min-width: 768px) {
+      line-height: 8.6rem;
+      border-radius: 4.3rem;
     }
+  }
 
-    &--height-short {
-        line-height: 3rem;
-        border-radius: 1.5rem;
-        @media (min-width: 768px) {
-            line-height: 3.6rem;
-            border-radius: 1.8rem;
-        }
+  &--height-medium {
+    line-height: 4.2rem;
+    border-radius: 2.1rem;
+    @media (min-width: 768px) {
+      line-height: 6.2rem;
+      border-radius: 3.1rem;
     }
+  }
 
-    &--center {
-        justify-content: center;
-        gap: 1rem;
+  &--height-short {
+    line-height: 3rem;
+    border-radius: 1.5rem;
+    @media (min-width: 768px) {
+      line-height: 3.6rem;
+      border-radius: 1.8rem;
     }
-    &--between {
-        justify-content: space-between;
-    }
+  }
 
-    &--height-tall.button--primary {
-        font-size: 3.4rem;
-        @media (min-width: 768px) {
-            font-size: 4.6rem;
-        }
-    }
-    &--height-medium.button--primary {
-        font-size: 2.4rem;
-        @media (min-width: 768px) {
-            font-size: 3.6rem;
-        }
-    }
-    &--height-short.button--primary {
-        font-size: 1.6rem;
-        @media (min-width: 768px) {
-            font-size: 2rem;
-        }
-    }
+  &--center {
+    justify-content: center;
+    gap: 1rem;
+  }
+  &--between {
+    justify-content: space-between;
+  }
 
-    &__text {
-        font-family: inherit;
-        font-weight: inherit;
-        color: inherit;
+  &--height-tall.button--primary {
+    font-size: 3.4rem;
+    @media (min-width: 768px) {
+      font-size: 4.6rem;
     }
-
-    &__icon {
-        .button--link-white & {
-            fill: var(--clr-gold);
-        }
-        .button--gold-gradient & {
-            fill: var(--clr-light-gray);
-        }
-        .button--dark-green & {
-            fill: var(--clr-gold);
-        }
-        &--arrow {
-            width: .7rem;
-            height: 1rem;
-            position: relative;
-            top: 1px;
-        }
+  }
+  &--height-medium.button--primary {
+    font-size: 2.4rem;
+    @media (min-width: 768px) {
+      font-size: 3.6rem;
     }
+  }
+  &--height-short.button--primary {
+    font-size: 1.6rem;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+  }
 
+  &__text {
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  &__icon {
+    .button--link-white & {
+      fill: var(--clr-gold);
+    }
+    .button--gold-gradient & {
+      fill: var(--clr-light-gray);
+    }
+    .button--dark-green & {
+      fill: var(--clr-gold);
+    }
+    &--arrow {
+      width: 0.7rem;
+      height: 1rem;
+      position: relative;
+      top: 1px;
+    }
+  }
 }
