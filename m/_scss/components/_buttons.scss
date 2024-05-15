@@ -24,8 +24,8 @@
   &--gold {
     background-color: var(--clr-gold);
     color: var(--clr-light-gray);
-    &:not(:area-disabled):hover,
-    &:not(:area-disabled):focus {
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
       background-color: var(--clr-light-gold);
     }
   }
@@ -33,8 +33,8 @@
   &--cream {
     background-color: var(--clr-cream);
     color: var(--clr-gold);
-    &:not(:area-disabled):hover,
-    &:not(:area-disabled):focus {
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
       background-color: var(--clr-gold);
       color: var(--clr-cream);
     }
@@ -43,8 +43,8 @@
   &--light-cream {
     background-color: var(--clr-light-cream);
     color: var(--clr-gold);
-    &:not(:area-disabled):hover,
-    &:not(:area-disabled):focus {
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
       background-color: var(--clr-cream);
     }
   }
